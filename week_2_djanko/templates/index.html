@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container">
+  <div class="col-xs-6">
+    <i class="far fa-arrow-alt-to-bottom"></i>
+  <div class="colorful-text">
+    <div style="color: red; font-size: 2em;">hello world, {{ name }}</div>
+    <div style="color: green">hello world, joe</div>
+    <div style="color: blue">hello world, excel</div>
+    {% for article in article_list %}
+      <div>{{ article.title }}</div>
+    {% endfor %}
+  </div>
+  </div>
+</div>
+<!-- <div class= "colorful">
+  <div>hello world, excel, using css file</div>
+</div>
+{% endblock %}

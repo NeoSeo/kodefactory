@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+#중심이 되는 urls 주소
 urlpatterns = [
-    url(r'^blog/', include('blog.urls')),
+    url(r'^', include('blog.urls')), #regular expression: r'^'은 다양한 패턴들을 커버하기 위해 쓰는 명령어
     url(r'^admin/', admin.site.urls),
 ]
